@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+.linha {
+    width: 90vw;
+    margin: 1rem auto 0 auto;
+}
+
+.bgCinza {
+    background-color: #EEEEEE;
+}
+
+.bgLaranja{
+    background-color: #F17400;
+}
+
+.titulo {
+    margin: 3rem 0;
+    text-transform: uppercase;
+}
+
+.tituloBranco {
+    margin: 3rem 0 1.5rem 0; 
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.tituloNb {
+    margin: 3rem 0 1.5rem 0;   
+    text-transform: uppercase;
+}
+
+.button-box {
+    text-align:center;
+ }
+
+ .btn-outline-dark{
+    border: #212529 solid 1px;
+    font-weight: 500;
+    justify-content: flex-end;
+ }
+
+ .btn-dark{
+    border: #212529 solid 1px;
+    font-weight: 400;
+ }
+
+ .btmSpace{
+    margin-bottom: 3rem;
+ }
+
+ @media only screen and (max-width: 1025px) {
+    .topSpace{
+        margin-top: 0.5rem;
+    }
+  }
+
+/* navbar */
+
+.bg-nav-autoshop {
+    background-color: #212529;
+    height: 80px;
+}
+
+a.nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+a.nav-link:hover {
+    color: #F17400;
+}
+
+.icofont-navigation-menu {
+    color: #F17400;
+}
+
+a.navbar-brand{
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 1025px) {
+    a.navbar-brand{
+        padding: 0;
+    }
+  }
+
+/* barra pesquisa home */
+
+input.pesquisar {
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    border: 1px solid #191717;
+    display: inline-block;
+}
+
+/* cards */
+
+.card {
+    /* margin: 10px 30px; */
+    display: inline-block;
+    overflow: hidden;
+}
+
+.preco {
+    color: #F17400;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 14px;
+    font-weight: lighter;
+    display: block;
+}
+
+.ver-mais {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 25px;
+}
+
+/* cabeçalho estoque */
+
+.cabecalho-estoque h1 {
+    margin: 15px 0;
+}
+
+@media (max-width: 900px) {
+    .cabecalho-estoque {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        margin: 8%;
+    }
+
+    .cabecalho-estoque button {
+        width: 120px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    #pesquisa {
+        width: 75%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cabecalho-estoque button {
+        width: 120px;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .cabecalho-estoque {
+        margin-left: 8%;
+    }
+}
+
+.cabecalho-estoque input {
+    height: 36px;
+    width: 25%;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    border: 1px solid black;
+}
+
+/* filtro cabeçalho estoque */
+
+#filtros-collapse .card {
+    width: 84%;
+    border: 1px solid black;
+    margin: 10px 8%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
+#filtros-collapse .card div {
+    width: 180px;
+}
+
+#filtros-collapse .card button {
+    height: 36px;
+    align-self: center;
+}
+
+.input-filtro {
+    width: 80px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#estoque {
+    margin: 10px 0;
+}
+
+#paginacao {
+    display: flex;
+    justify-content: center;
+}

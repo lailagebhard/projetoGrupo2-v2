@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estoque.html">Estoque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vendacarro.html">Venda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid w-50">
+                <form class="d-flex" role="search" onsubmit="return false;">
+                    <input id="input-pesquisa" class="form-control me-2" type="search"
+                        placeholder="Busque uma marca ou modelo" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="pesquisa">Pesquisar</button>
+                    <button class="btn btn-outline-success" type="button" id="limpar-busca">Limpar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="cabecalho-estoque">
+                <h1>Estoque</h1>
+                <input type="text" id="pesquisa" placeholder="Pesquisar marcas ou modelos">
+                <button class="btn btn-dark pesquisa-estoque botoes-estoque">PESQUISAR</button>
+                <button class="btn border-dark btn-light text-black botoes-estoque" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#filtros-collapse" aria-expanded="false"
+                    aria-controls="filtros-collapse">
+                    FILTRAR
+                </button>
+            </div>
+            <div class="collapse" id="filtros-collapse">
+                <div class="card card-body">
+                    <div class="mb-3">
+                        <h6 class="d-block">Marcas</h6>
+                        <div id="marcas-container">
+                            <!--Injetar com javascript-->
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="d-block">Modelos</h6>
+                        <div id="modelos-container">
+                            <!--Injetar com javascript-->
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="d-block">Ano</h6>
+                        <label for="ano-minimo">De:</label>
+                        <input type="number" id="ano-minimo" class="input-filtro">
+                        <label for="ano-maximo">Até:</label>
+                        <input type="number" id="ano-maximo" class="input-filtro">
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="d-block">Preço</h6>
+                        <label for="preco-minimo">De:</label>
+                        <input type="number" id="preco-minimo" class="input-filtro">
+                        <label for="preco-maximo">Até:</label>
+                        <input type="number" id="preco-maximo" class="input-filtro">
+                    </div>
+                    <button class="btn btn-dark pesquisa-estoque botoes-estoque" id="aplicar-filtros">Aplicar
+                        filtros</button>
+                    <button class="btn border-dark btn-light text-black botoes-estoque" id="limpar-filtros">Limpar
+                        filtros</button>
+                </div>
+            </div>
+            <div id="estoque" class="text-center">
+
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="janela-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="titulo-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titulo-modal">Registrar interesse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="return false;">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="endereco" class="form-label">Endereco</label>
+                            <input type="text" class="form-control" id="endereco">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button id="botao-enviar" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/estoque.js"></script>
+</body>
+
+</html>

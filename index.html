@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="shortcut icon" href="/img/fav-autoshop.jpg" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg bg-nav-autoshop">
+        <div class="container-fluid navpad">
+            <a class="navbar-brand" href="index.html"><img src="/img/logotipo-branco.png" width="200px"
+                    alt="Logo AutoShop"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icofont-navigation-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estoque.html">Estoque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vendacarro.html">Venda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banners rotativos -->
+    <div class="row">
+        <div class="col-md-12 col-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/banner-compramos-seu-carro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/banner-avalicao.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/banner-financie-seu-sonho.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <!-- Encontre seu carro -->
+
+        <div class="bgCinza">
+            <div class="container text-center pb-5">
+                <div class="row">
+                    <div class="container text-center">
+                        <h3 class="tituloNb">ENCONTRE SEU CARRO</h3>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-md-10">
+                        <input type="text" style="width: 100%;" class="pesquisar" id="pesquisa"
+                            placeholder="Pesquisar marcas ou modelos">
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <button class="btn btn-dark topSpace">PESQUISAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carros -->
+        <div class="container text-center">
+            <!-- Titulo do container -->
+            <h3 class="titulo">ÚLTIMAS NOVIDADES</h3>
+            <!-- Container de veiculos -->
+            <div class="row">
+                <!-- Veiculo 1 -->
+                <div class="col-sm-4 col-12 pb-5">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/upload-carros/volkswagen-taos.jpg" alt="">
+                        <div class="card-body">
+                            <div class="text-start">
+                                <h5 class="card-title">VOLKSWAGEN TAOS</h5>
+                                <span class="card-text descricao">1.4 250 TSI TOTAL FLEX AUTOMÁTICO</span>
+                                <span class="card-text descricao">2022/2022 | 9.500 km</span><br>
+                            </div>
+                            <div class="text-start">
+                                <span class="preco">R$ 174.900</span>
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Veiculo 2 -->
+                <div class="col-sm-4 col-12 pb-5">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/upload-carros/fiat-mobi.jpg" alt="">
+                        <div class="card-body">
+                            <div class="text-start">
+                                <h5 class="card-title">FIAT MOBI</h5>
+                                <span class="card-text descricao">1.0 EVO FLEX LIKE. MANUAL</span>
+                                <span class="card-text descricao">2019/2020 | 9.000 km</span><br>
+                            </div>
+                            <div class="text-start">
+                                <span class="preco">R$ 55.490</span>
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Veiculo 3 -->
+                <div class="col-sm-4 col-12 pb-5">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/upload-carros/ford-ka.jpg" alt="">
+                        <div class="card-body">
+                            <div class="text-start">
+                                <h5 class="card-title">FORD KA</h5>
+                                <span class="card-text descricao">1.5 TI-VCT FLEX SE PLUS MANUAL</span>
+                                <span class="card-text descricao">2019/2020 | 29.107 km</span><br>
+                            </div>
+                            <div class="text-start">
+                                <span class="preco">R$ 77.000</span>
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="estoque.html" class="btn btn-dark">VER ESTOQUE COMPLETO</a>
+
+            <div class="row pt-5 pb-1">
+                <hr class="linha">
+            </div>
+
+            <!-- Mais procurados -->
+            <div class="container text-center">
+                <h3 class="titulo">MAIS PROCURADOS</h3>
+                <!-- Container de veiculos -->
+                <div class="row">
+                    <!-- Veiculo 1 -->
+                    <div class="col-sm-4 col-12 pb-5">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="/upload-carros/fiat-argo.jpg" alt="HB20">
+                            <div class="card-body">
+                                <div class="text-start">
+                                    <h5 class="card-title">FIAT ARGO</h5>
+                                    <span class="card-text descricao">1.0 FIREFLY FLEX DRIVE MANUAL</span>
+                                    <span class="card-text descricao">2019/2020 | 49.997 km</span><br>
+                                </div>
+                                
+                                <div class="text-start">
+                                    <span class="preco">R$ 58.490</span>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veiculo 2 -->
+                    <div class="col-sm-4 col-12 pb-5">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="/upload-carros/ford-ecosport.jpg" alt="">
+                            <div class="card-body">
+                                <div class="text-start">
+                                    <h5 class="card-title">FORD ECOSPORT</h5>
+                                    <span class="card-text descricao">2.0 DIRECT FLEX STORM 4WD AUTOMÁTICO</span>
+                                    <span class="card-text descricao">2019/2020 | 52.281 km</span><br>
+                                </div>
+                                <div class="text-start">
+                                    <span class="preco">R$ 84.900</span>
+                                </div>
+                                <div class="text-end">
+                                    <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veiculo 3 -->
+                    <div class="col-sm-4 col-12 pb-5">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="/upload-carros/volkswagen-fusca.jpg" alt="HB20">
+                            <div class="card-body">
+                                <div class="text-start">
+                                    <h5 class="card-title">VOLKSWAGEN FUSCA</h5>
+                                    <span class="card-text descricao">1.0 UNIQUE 12V FLEX 4P MANUAL</span>
+                                    <span class="card-text descricao">2012/2013 | 94.613 km</span><br>
+                                </div>
+                                <div class="text-start">
+                                    <span class="preco">R$ 96.680</span>
+                                </div>
+                                <div class="text-end">
+                                    <a href="#" class="btn btn-outline-dark btn-sm">VER MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="estoque.html" class="btn btn-dark btmSpace">VER ESTOQUE COMPLETO</a>
+            </div>
+        </div>
+
+
+        <!-- Compramos seu veiculo -->
+        <div class="bgLaranja">
+            <div class="container text-center pb-5">
+                <div class="row">
+                    <h3 class="tituloBranco">Compramos seu veículo sem burocracia e com agilidade!</h3>
+                    <div class="button-box col-lg-12">
+                        <a href="vendacarro.html" class="btn btn-outline-dark" role="button">FAÇA UMA AVALIAÇÃO GRUTUITA</a>
+                        <a href="vendacarro.html" class="btn btn-dark topSpace" role="button">VENDA SEU CARRO</a>
+               </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Janela modal -->
+    <div class="modal fade" id="janela-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="titulo-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titulo-modal">Registrar interesse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="return false;">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="endereco" class="form-label">Endereco</label>
+                            <input type="text" class="form-control" id="endereco">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button id="botao-enviar" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
